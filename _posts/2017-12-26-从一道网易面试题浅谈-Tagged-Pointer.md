@@ -95,8 +95,7 @@ Tagged Pointer 是一个能够提升性能、节省内存的有趣的技术。
 - 它的内存并不存储在堆中，也不需要 malloc 和 free，所以拥有极快的读取和创建速度。
 
 
-
-
+![Imgur](https://i.imgur.com/o3LMulm.jpg)
 ### 参考：
 
 - [从一道网易面试题浅谈OC线程安全](https://www.jianshu.com/p/cec2a41aa0e7)
