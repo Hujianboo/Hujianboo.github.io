@@ -1,0 +1,27 @@
+.side-bar{
+  width: 300px;
+  // position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  .name{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 32px;
+    font-family: 'times new roman',times,serif;
+  }
+  .nav{
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    .tag{
+      height: 30px;
+      &:hover{
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+}
