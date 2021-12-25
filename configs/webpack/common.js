@@ -29,6 +29,18 @@ module.exports = {
           "image-webpack-loader?bypassOnDebug&optipng.optimizationLevel=7&gifsicle.interlaced=false",
         ],
       },
+      {
+        test: /\.md$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              esModule: true,
+              outputPath: "docs/",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "index.html.ejs" })],
