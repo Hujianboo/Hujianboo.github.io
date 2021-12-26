@@ -1,21 +1,8 @@
 .article-container{
-  margin-left: 300px;
   align-items: center;
   justify-content: center;
   .detail{
     display: flow-root;
-    margin: 50px 500px 50px 0;
-    @media screen and (min-width:2000px) {
-      margin-right: 500px;
-    }
-    @media screen and (min-width:1000px) and (max-width: 1999px) {
-      margin-right: 200px;
-    }
-    @media screen and (max-width: 999px) {
-      margin-right: 50px;
-    }
-  }
-  @media screen and (max-width: 999px) {
-    margin-left: 150px;
+    margin: 50px;
   }
 }

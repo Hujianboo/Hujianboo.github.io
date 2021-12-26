@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { hot } from "react-hot-loader";
 import SideBar from "./components/SideBar";
+import TopBar from "./components/TopBar";
 import ArticleList from "./components/ArticleList";
 import Article from "./components/Article/index";
 import Record from "./views/Record";
@@ -26,25 +27,27 @@ const App: React.FC<any> = () => {
     <HashRouter>
       <div className="app">
         <SideBar />
-        <Switch>
-          <Route exact path="/about">
-            <Record />
-          </Route>
-          <Route path="/tech">
-            {"werwer"}
-            <Tech ArticleList={ArticleList[Category.Tech]} />
-          </Route>
-          <Route path="/game">
-            <Game ArticleList={ArticleList[Category.Game]} />
-          </Route>
-          <Route path="/reading">
-            <Reading ArticleList={ArticleList[Category.Reading]} />
-          </Route>
-          <Route path="/life">
-            <Life ArticleList={ArticleList[Category.Life]} />
-          </Route>
-          <Route exact path={`/article/:mdName`} component={Article}></Route>
-        </Switch>
+        <TopBar />
+        <div className="app-container">
+          <Switch>
+            <Route exact path="/about">
+              <Record />
+            </Route>
+            <Route path="/tech">
+              <Tech ArticleList={ArticleList[Category.Tech]} />
+            </Route>
+            <Route path="/game">
+              <Game ArticleList={ArticleList[Category.Game]} />
+            </Route>
+            <Route path="/reading">
+              <Reading ArticleList={ArticleList[Category.Reading]} />
+            </Route>
+            <Route path="/life">
+              <Life ArticleList={ArticleList[Category.Life]} />
+            </Route>
+            <Route exact path={`/article/:mdName`} component={Article}></Route>
+          </Switch>
+        </div>
       </div>
     </HashRouter>
   );

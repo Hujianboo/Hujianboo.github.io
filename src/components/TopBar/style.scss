@@ -1,31 +1,30 @@
-.side-bar{
+.top-bar{
   position: fixed;
-  width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
   left: 0px;
   top: 0px;
-  height: 100%;
+  height: 50px;
   background: rgba(255, 255, 255, 1);
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
+  flex-flow: row;
+  justify-content: space-around;
   align-items: center;
   .name{
-    display: flow-root;
-    margin: 50px 0 50px 0;
     font-size: 16px;
     font-family: 'times new roman',times,serif;
   }
   .avatar{
     border-radius: 60px;
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
     display: flow-root;
     cursor: pointer;
   }
   .flip-container {
     perspective: 1000;
-    margin: 100px 0 50px 0;
     // display: ;
   }
   /* flip the pane when hovered */
@@ -34,8 +33,8 @@
   }
   
   .flip-container, .front, .back {
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
   }
   /* flip speed goes here */
   .flipper {
@@ -58,9 +57,15 @@
   .back {
     transform: rotateY(180deg);
   }
-  .nav{  
+  .nav{
+    flex:1;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
     .tag{
       height: 30px;
+      line-height: 30px;
       &:hover{
         cursor: pointer;
         font-weight: 600;

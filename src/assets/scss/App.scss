@@ -1,4 +1,5 @@
 @import '../../components/SideBar/style.scss';
+@import '../../components/TopBar/style.scss';
 @import '../../components/ArticleList/style.scss';
 @import '../../components/Article/style.scss';
 @import '../../views/Record/style.scss';
@@ -6,3 +7,41 @@
 @import '../../views/Game/style.scss';
 @import '../../views/Reading/style.scss';
 @import '../../views/Life/style.scss';
+
+.app-container{
+  margin-top: 60px;
+  margin-left: 300px;
+  display: flow-root;
+  @media screen and (min-width:2000px) {
+    margin-right: 500px;
+  }
+  @media screen and (min-width:1000px) and (max-width: 1999px) {
+    margin-right: 200px;
+  }
+  @media screen and(min-width: 750px) and (max-width: 999px){
+    margin-left: 150px;
+    margin-right: 50px;
+  }
+  @media screen and(max-width: 749px) {
+    margin-left: 0px;
+  }
+}
+.side-bar{
+  @media screen and(min-width: 750px) and (max-width: 999px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 749px) {
+    display: none;
+  }
+}
+.top-bar{
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+  @media screen and (max-width: 749px) {
+    display: flex;
+  }
+}
+*{
+  -webkit-tap-highlight-color: transparent;
+}
