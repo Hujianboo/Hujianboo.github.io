@@ -47,10 +47,10 @@ const TopBar: React.FC = () => {
         <Link to="/life">
           <div className="tag">生活</div>
         </Link>
+        <Link to="/about" className="tag">
+          <div>关于我</div>
+        </Link>
       </div>
-      <Link to="/about" className="name">
-        <div>关于我</div>
-      </Link>
     </div>
   );
 };
