@@ -1,5 +1,12 @@
 import React from "react";
-const Tech: React.FC<any> = () => {
-  return <div className="tech-view">Tech</div>;
+import ArticleListComp from "../../components/ArticleList";
+import { ArticleListType } from "../../components/ArticleList";
+const Tech: React.FC<ArticleListType> = (props) => {
+  const { ArticleList } = props;
+  return (
+    <div className="tech-view">
+      <ArticleListComp ArticleList={ArticleList}></ArticleListComp>
+    </div>
+  );
 };
 export default Tech;

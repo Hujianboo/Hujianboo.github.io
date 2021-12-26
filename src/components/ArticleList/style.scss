@@ -1,0 +1,18 @@
+.article-list{
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  &-tab{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flow-root;
+    margin: 25px 0;
+    &:hover{
+      cursor: pointer;
+      color: rgb(19, 135, 230);
+    }
+  }
+}
