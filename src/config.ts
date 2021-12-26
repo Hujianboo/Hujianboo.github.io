@@ -2,7 +2,7 @@
  * @Author: Hujianbo
  * @Date: 2021-12-26 14:15:25
  * @LastEditors: Hujianbo
- * @LastEditTime: 2021-12-26 20:02:49
+ * @LastEditTime: 2021-12-27 00:51:46
  * @FilePath: /main-blog/src/config.ts
  */
 import { ArticleListType } from "./components/ArticleList";
@@ -16,10 +16,10 @@ const config: ArticleListType = {
       mdName: "《枪炮 病菌和钢铁》阅读总结",
     },
     {
-      name: "我的七年念书生涯",
-      date: 20211226,
+      name: "我的七年学生生活",
+      date: 20211227,
       category: Category.Life,
-      mdName: "我的七年念书生涯",
+      mdName: "我的七年学生生活",
     },
   ],
 };
