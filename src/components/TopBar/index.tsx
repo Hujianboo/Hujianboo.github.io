@@ -1,39 +1,45 @@
 import * as React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 import avatarFront from "../../assets/img/avatar-front.png";
 import avatarBack from "../../assets/img/avatar-back.png";
 const TopBar: React.FC = () => {
+  const [hoverState, setHoverState] = useState(false);
   return (
     <div className="top-bar">
-      <Link to="/">
-        <div
-          className={classnames({
-            "flip-container": true,
-          })}
-        >
-          <div className="flipper">
-            <div className="front">
-              <img
-                className="avatar"
-                src={avatarFront}
-                alt=""
-                width={40}
-                height={40}
-              />
-            </div>
-            <div className="back">
-              <img
-                className="avatar"
-                src={avatarBack}
-                alt=""
-                width={40}
-                height={40}
-              />
-            </div>
+      {/* <Link to="/"> */}
+      <div
+        className={classnames({
+          "flip-container": true,
+          hover: hoverState,
+        })}
+        onClick={(e) => {
+          setHoverState(!hoverState);
+        }}
+      >
+        <div className="flipper">
+          <div className="front">
+            <img
+              className="avatar"
+              src={avatarFront}
+              alt=""
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="back">
+            <img
+              className="avatar"
+              src={avatarBack}
+              alt=""
+              width={40}
+              height={40}
+            />
           </div>
         </div>
-      </Link>
+      </div>
+      {/* </Link> */}
       <div className="nav">
         <Link to="/tech">
           <div className="tag">技术</div>

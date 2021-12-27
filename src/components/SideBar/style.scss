@@ -29,10 +29,11 @@
     // display: ;
   }
   /* flip the pane when hovered */
-  .flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
+  @media (hover: hover){
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }
   }
-  
   .flip-container, .front, .back {
     width: 120px;
     height: 120px;
@@ -61,10 +62,12 @@
   .nav{  
     .tag{
       height: 30px;
-      &:hover{
-        cursor: pointer;
-        font-weight: 600;
-      }
+      @media (hover: hover) {
+        &:hover{
+          cursor: pointer;
+          font-weight: 600;
+        }
+      } 
     }
   }
   a{
