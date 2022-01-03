@@ -2,7 +2,7 @@
  * @Author: Hujianbo
  * @Date: 2021-12-26 14:15:25
  * @LastEditors: Hujianbo
- * @LastEditTime: 2021-12-27 00:51:46
+ * @LastEditTime: 2022-01-03 14:52:46
  * @FilePath: /main-blog/src/config.ts
  */
 import { ArticleListType } from "./components/ArticleList";
@@ -20,6 +20,12 @@ const config: ArticleListType = {
       date: 20211227,
       category: Category.Life,
       mdName: "我的七年学生生活",
+    },
+    {
+      name: `"pure function"`,
+      date: 20220103,
+      category: Category.Tech,
+      mdName: `"pure function"`,
     },
   ],
 };
