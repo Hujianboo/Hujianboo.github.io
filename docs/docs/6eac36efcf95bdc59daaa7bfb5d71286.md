@@ -4,7 +4,7 @@
 
 haskell的类型系统实在是难以理解，因为主要目的是能够简化数据处理的手段，并不是具体地去研究编程范式，所以并没有继续深入下去。相反，ramda.js这个库研究了不少，得到了不少启发。
 
-看完了[这个系列文章](https://www.educative.io/courses/functional-programming-patterns-with-ramdajs) 这个作者讲的非常的好。基本上了介绍了ramda.js这个库的常见用法， 并且顺带地讲到了函数式的一些重要概念。个人认为，其实js本身就是多范式的语言，在平常的工作中，往往都会不自觉地采取面向对象和函数式，不会过多地在意。所以其中的pipe以及compose,并没有觉得太多的新奇。functor算是一个比较有趣的概念。
+看完了[这个系列文章](https://www.educative.io/courses/functional-programming-patterns-with-ramdajs) 。这个作者讲的非常的好。它基本上了介绍了ramda.js这个库的常见用法， 并且顺带地讲到了函数式的一些重要概念。个人认为，其实js本身就是多范式的语言，在平常的工作中，往往都会不自觉地采取面向对象和函数式，不会过多地在意。所以其中的pipe以及compose,并没有觉得太多的新奇。functor算是一个比较有趣的概念。
 
 functor可以理解为一个必须要含有一个叫map方法的容器，map方法可以对集合里的数据进行变换得到另一个新集合（个人理解）。
 
@@ -52,4 +52,4 @@ export default map;
 
 但是，相关的其中了解到的思想还是非常值得借鉴学习的。比如更好的利用管道方式、functor的使用以及高阶函数的使用。在工作中可以尝试简单地进行封装函数式工具类，或者使用lodash/fp能够更加地让同事们接手合作。
 
-另外还有一本[书](https://mostly-adequate.gitbook.io/mostly-adequate-guide/)，这是上述课程最后介绍的，粗粗扫了一眼，可能正式自己需要的，既不会太多使用第三方库却又能够很好地利用函数式的思想对代码进行合理简化。后续看完了再更新这篇文章吧。
+另外还有一本[书](https://mostly-adequate.gitbook.io/mostly-adequate-guide/)，这是上述课程最后介绍的，粗粗扫了一眼，可能正是自己需要的，既不会太多使用第三方库却又能够很好地利用函数式的思想对代码进行合理简化。后续看完有了值得借鉴的地方后，再更新这篇文章吧。
