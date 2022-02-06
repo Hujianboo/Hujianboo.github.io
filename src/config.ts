@@ -27,6 +27,12 @@ const config: ArticleListType = {
       category: Category.Tech,
       mdName: `"pure function"`,
     },
+    {
+      name: `自定义编辑器系列hook`,
+      date: 20220206,
+      category: Category.Tech,
+      mdName: `自定义编辑器系列hook`,
+    },
   ],
 };
 export default config;
