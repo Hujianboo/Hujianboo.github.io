@@ -28,10 +28,16 @@ const config: ArticleListType = {
       mdName: `"pure function"`,
     },
     {
-      name: `自定义编辑器系列hook`,
+      name: `自定义编辑器系列hook之拖拽和旋转`,
       date: 20220206,
       category: Category.Tech,
-      mdName: `自定义编辑器系列hook`,
+      mdName: `自定义编辑器系列hook之拖拽和旋转`,
+    },
+    {
+      name: `json schema配置化表单的初步实现`,
+      date: 20220327,
+      category: Category.Tech,
+      mdName: `json schema配置化表单的初步实现`,
     },
   ],
 };
