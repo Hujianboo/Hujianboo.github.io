@@ -39,6 +39,12 @@ const config: ArticleListType = {
       category: Category.Tech,
       mdName: `json schema配置化表单的初步实现`,
     },
+    {
+      name: `react hook使用心得和经验`,
+      date: 20220401,
+      category: Category.Tech,
+      mdName: `react hook使用心得和经验`,
+    },
   ],
 };
 export default config;
