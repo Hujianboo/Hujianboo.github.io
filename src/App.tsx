@@ -19,8 +19,9 @@ const App: React.FC<any> = () => {
   const [ArticleList, setArticleList] = useState({});
   useEffect(() => {
     const list = _.groupBy(config.ArticleList, "category");
-    console.log(list);
-
+    for (const key in list) {
+      list[key] = list[key].sort((a, b) => b.date - a.date);
+    }
     setArticleList(list);
   }, []);
   return (
