@@ -12,6 +12,9 @@
   margin-top: 60px;
   margin-left: 300px;
   display: flow-root;
+  p{
+    text-indent: 2rem;
+  }
   @media screen and (min-width:2000px) {
     margin-right: 500px;
   }
